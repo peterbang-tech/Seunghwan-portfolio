@@ -19,11 +19,9 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: var(--text-main); background-color: var(--bg-light); }
 
-        /* Header Section */
         header { background: var(--primary); color: white; padding: 3.5rem 1.5rem; text-align: center; }
         .header-container { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
         
-        /* Profile Image Styling */
         .profile-img-container { width: 140px; height: 140px; border-radius: 50%; border: 4px solid var(--accent); overflow: hidden; margin-bottom: 1.2rem; background-color: #334155; display: flex; align-items: center; justify-content: center; }
         .profile-img { width: 100%; height: 100%; object-fit: cover; }
         
@@ -34,23 +32,19 @@
         .contact-buttons a { color: white; background-color: var(--accent); padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; margin: 0 0.3rem; display: inline-block; transition: background 0.2s; }
         .contact-buttons a:hover { background-color: var(--accent-hover); }
 
-        /* Main Container */
         .container { max-width: 950px; margin: 0 auto; padding: 2.5rem 1.5rem; }
         section { margin-bottom: 3rem; }
         
         h2 { font-size: 1.5rem; color: var(--primary); border-bottom: 2.5px solid var(--accent); padding-bottom: 0.4rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.5px; }
 
-        /* Summary Card */
         .summary-card { background: var(--card-bg); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
 
-        /* Competencies Grid */
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; }
         .skill-card { background: var(--card-bg); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border); }
         .skill-card h3 { font-size: 1.05rem; color: var(--accent); margin-bottom: 0.5rem; }
         .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
         .tag { background: #eff6ff; color: #1e40af; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500; }
 
-        /* Experience Section */
         .job-card { background: var(--card-bg); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border); margin-bottom: 1.2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.03); }
         .job-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; margin-bottom: 0.6rem; }
         .job-title { font-weight: 700; font-size: 1.1rem; color: var(--primary); }
@@ -60,7 +54,6 @@
         ul.job-bullets { margin-left: 1.2rem; margin-top: 0.5rem; }
         ul.job-bullets li { margin-bottom: 0.4rem; color: #334155; font-size: 0.93rem; }
 
-        /* Education & Certs */
         .edu-item { margin-bottom: 0.8rem; }
         .edu-item:last-child { margin-bottom: 0; }
 
@@ -71,7 +64,6 @@
 
     <header>
         <div class="header-container">
-            <!-- 프로필 사진 영역 (사진 파일명을 profile.jpg 로 올려주시면 표시됩니다) -->
             <div class="profile-img-container">
                 <img src="profile.jpg" alt="Seung-Hwan (Peter) Bang" class="profile-img" onerror="this.style.display='none'; this.parentNode.innerHTML='<span style=\'color:#94a3b8; font-size:2.5rem;\'>PB</span>'">
             </div>
@@ -88,35 +80,33 @@
     </header>
 
     <div class="container">
-        <!-- Profile Summary -->
         <section id="summary">
             <h2>Executive Profile</h2>
             <div class="summary-card">
-                <p>PMP-certified leader with over 15 years of experience in IoT, Telecommunications, Connected Vehicle sectors, and Global Regulatory Compliance. Proven track record of maximizing Tier-1 carrier partnerships (AT&T, Verizon, T-Mobile, Rogers, Bell, Telus) and managing full-lifecycle wireless connectivity products for enterprise deployments exceeding <strong>4 Million+ units</strong>. Expert in bridging hardware engineering, firmware optimization, regulatory roadmaps, and commercial launch execution[cite: 4].</p>
+                <p>PMP-certified leader with over 15 years of experience in IoT, Telecommunications, Connected Vehicle sectors, and Global Regulatory Compliance. Proven track record of maximizing Tier-1 carrier partnerships (AT&T, Verizon, T-Mobile, Rogers, Bell, Telus) and managing full-lifecycle wireless connectivity products for enterprise deployments exceeding <strong>4 Million+ units</strong>. Expert in bridging hardware engineering, firmware optimization, regulatory roadmaps, and commercial launch execution.</p>
             </div>
         </section>
 
-        <!-- Core Competencies -->
         <section id="competencies">
             <h2>Core Competencies & Expertise</h2>
             <div class="grid">
                 <div class="skill-card">
                     <h3>Regulatory Compliance & NPI</h3>
-                    <p>Global regulatory strategy and testing execution[cite: 4].</p>
+                    <p>Global regulatory strategy and testing execution.</p>
                     <div class="skill-tags">
                         <span class="tag">FCC / IC</span><span class="tag">CE Mark</span><span class="tag">PTCRB / GCF</span><span class="tag">Safety (IEC/UL)</span><span class="tag">EMC</span><span class="tag">RoHS / REACH</span>
                     </div>
                 </div>
                 <div class="skill-card">
                     <h3>Carrier Approvals & Standards</h3>
-                    <p>Technical acceptance & Tier-1 carrier relations[cite: 4].</p>
+                    <p>Technical acceptance & Tier-1 carrier relations.</p>
                     <div class="skill-tags">
                         <span class="tag">AT&T</span><span class="tag">Verizon</span><span class="tag">T-Mobile</span><span class="tag">Bell</span><span class="tag">Rogers</span><span class="tag">Telus</span><span class="tag">3GPP (5G/LTE-M)</span>
                     </div>
                 </div>
                 <div class="skill-card">
                     <h3>Diagnostics & Analytics</h3>
-                    <p>Deep-dive modem log analysis & defect resolution[cite: 4].</p>
+                    <p>Deep-dive modem log analysis & defect resolution.</p>
                     <div class="skill-tags">
                         <span class="tag">QXDM</span><span class="tag">Wireshark</span><span class="tag">XCAL</span><span class="tag">Jira</span><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Quectel / Sequans</span>
                     </div>
@@ -124,11 +114,9 @@
             </div>
         </section>
 
-        <!-- Full Career Experience -->
         <section id="experience">
             <h2>Professional Experience</h2>
 
-            <!-- Geotab -->
             <div class="job-card">
                 <div class="job-header">
                     <div>
@@ -138,14 +126,13 @@
                     <div class="job-date">Aug 2021 – Jan 2025</div>
                 </div>
                 <ul class="job-bullets">
-                    <li>Orchestrated the wireless connectivity and hardware qualification roadmap for Geotab’s global telematics ecosystem, supporting <strong>4M+ unit deployments</strong> across North America, Europe, and Oceania[cite: 4].</li>
-                    <li>Led end-to-end technical approval and commercial launch for 10+ global Tier-1 carriers (including AT&T, Verizon, T-Mobile, Vodafone, Telefonica)[cite: 4].</li>
-                    <li>Led the USAF certification process for GO9B, ensuring full compliance with MIL-STD-461G and E3 safety standards (HERO/HERP/HERF)[cite: 4].</li>
-                    <li>Analyzed modem diagnostic logs (QXDM, Wireshark) for Quectel, Sequans, and U-blox cellular modules to resolve complex protocol defects[cite: 4].</li>
+                    <li>Orchestrated the wireless connectivity and hardware qualification roadmap for Geotab’s global telematics ecosystem, supporting <strong>4M+ unit deployments</strong> across North America, Europe, and Oceania.</li>
+                    <li>Led end-to-end technical approval and commercial launch for 10+ global Tier-1 carriers (including AT&T, Verizon, T-Mobile, Vodafone, Telefonica).</li>
+                    <li>Led the USAF certification process for GO9B, ensuring full compliance with MIL-STD-461G and E3 safety standards (HERO/HERP/HERF).</li>
+                    <li>Analyzed modem diagnostic logs (QXDM, Wireshark) for Quectel, Sequans, and U-blox cellular modules to resolve complex protocol defects.</li>
                 </ul>
             </div>
 
-            <!-- Uzillion -->
             <div class="job-card">
                 <div class="job-header">
                     <div>
@@ -155,11 +142,10 @@
                     <div class="job-date">Feb 2020 – Jun 2021</div>
                 </div>
                 <ul class="job-bullets">
-                    <li>Analyzed market access requirements and competitive trends across North America and South Korea to shape strategic growth initiatives[cite: 4].</li>
+                    <li>Analyzed market access requirements and competitive trends across North America and South Korea to shape strategic growth initiatives.</li>
                 </ul>
             </div>
 
-            <!-- Bell Mobility -->
             <div class="job-card">
                 <div class="job-header">
                     <div>
@@ -169,13 +155,12 @@
                     <div class="job-date">Sep 2008 – Jan 2020</div>
                 </div>
                 <ul class="job-bullets">
-                    <li>Led device qualification programs for major Tier-1 OEMs (Samsung, Apple, Motorola, BlackBerry) bringing VoLTE, VoWiFi, eSIM, and wearables to market[cite: 4].</li>
-                    <li>Redesigned Bell’s mobile device certification process and automation framework, <strong>reducing certification cycle times by 50%</strong>[cite: 4].</li>
-                    <li>Managed field interoperability testing (FIT), RF throughput, audio quality, and network roaming trials across complex live environments[cite: 4].</li>
+                    <li>Led device qualification programs for major Tier-1 OEMs (Samsung, Apple, Motorola, BlackBerry) bringing VoLTE, VoWiFi, eSIM, and wearables to market.</li>
+                    <li>Redesigned Bell’s mobile device certification process and automation framework, <strong>reducing certification cycle times by 50%</strong>.</li>
+                    <li>Managed field interoperability testing (FIT), RF throughput, audio quality, and network roaming trials across complex live environments.</li>
                 </ul>
             </div>
 
-            <!-- TELUS -->
             <div class="job-card">
                 <div class="job-header">
                     <div>
@@ -185,12 +170,11 @@
                     <div class="job-date">Jul 2007 – Aug 2008</div>
                 </div>
                 <ul class="job-bullets">
-                    <li>Managed complete qualification lifecycle for TELUS's CDMA device portfolio from procurement through certification and network activation[cite: 4].</li>
-                    <li>Streamlined defect tracking workflows in Mercury Quality Center, utilizing prioritized logs to accelerate OEM debugging[cite: 4].</li>
+                    <li>Managed complete qualification lifecycle for TELUS's CDMA device portfolio from procurement through certification and network activation.</li>
+                    <li>Streamlined defect tracking workflows in Mercury Quality Center, utilizing prioritized logs to accelerate OEM debugging.</li>
                 </ul>
             </div>
 
-            <!-- KOCCA -->
             <div class="job-card">
                 <div class="job-header">
                     <div>
@@ -200,11 +184,10 @@
                     <div class="job-date">Mar 2003 – Apr 2005</div>
                 </div>
                 <ul class="job-bullets">
-                    <li>Led strategy planning and operated RF Test-Chamber facilities for mobile content startups and wireless telecom initiatives[cite: 4].</li>
+                    <li>Led strategy planning and operated RF Test-Chamber facilities for mobile content startups and wireless telecom initiatives.</li>
                 </ul>
             </div>
 
-            <!-- Real Networks -->
             <div class="job-card">
                 <div class="job-header">
                     <div>
@@ -214,23 +197,22 @@
                     <div class="job-date">Jan 2001 – Mar 2003</div>
                 </div>
                 <ul class="job-bullets">
-                    <li>Owned technical market readiness and service launch for Orange Israel's mobile platforms, guiding third-party vendors and client stakeholders[cite: 4].</li>
+                    <li>Owned technical market readiness and service launch for Orange Israel's mobile platforms, guiding third-party vendors and client stakeholders.</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Education & Certifications -->
         <section id="education">
             <h2>Education & Professional Credentials</h2>
             <div class="summary-card">
                 <div class="edu-item">
-                    <strong>PMP® (Project Management Professional)</strong> — Project Management Institute[cite: 4]
+                    <strong>PMP® (Project Management Professional)</strong> — Project Management Institute
                 </div>
                 <div class="edu-item">
-                    <strong>Master Certificate in Project Management</strong> — Schulich School of Business, York University (2012)[cite: 4]
+                    <strong>Master Certificate in Project Management</strong> — Schulich School of Business, York University (2012)
                 </div>
                 <div class="edu-item">
-                    <strong>Bachelor of Engineering in Computer Engineering</strong> — Catholic University of Korea (2001)[cite: 4]
+                    <strong>Bachelor of Engineering in Computer Engineering</strong> — Catholic University of Korea (2001)
                 </div>
             </div>
         </section>
